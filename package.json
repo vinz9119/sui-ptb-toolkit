@@ -1,12 +1,30 @@
 {
   "name": "@vinz9119/sui-ptb-toolkit",
-  "private": true,
   "version": "0.1.0",
-  "description": "SDK-independent planning primitives for Sui programmable transaction workflows",
-  "scripts": {
-    "typecheck": "tsc --noEmit"
+  "description": "SDK-independent planning primitives for Sui programmable transaction workflows.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinz9119/sui-ptb-toolkit.git"
   },
-  "devDependencies": {
-    "typescript": "^5.6.0"
+  "bugs": {
+    "url": "https://github.com/vinz9119/sui-ptb-toolkit/issues"
+  },
+  "homepage": "https://github.com/vinz9119/sui-ptb-toolkit",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
