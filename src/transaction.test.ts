@@ -1,4 +1,4 @@
-import { TransactionPlan } from "./transaction";
+import { TransactionPlan } from "./transaction.js";
 
 const plan = new TransactionPlan()
   .moveCall("0x2::example::doThing", ["arg0"])
